@@ -1,16 +1,28 @@
-let  left = document.querySelector('.left');
-let  right = document.querySelector('.right');
-let  leftRight = document.querySelector('.leftRight');
+let left = document.querySelector('.left');
+let right = document.querySelector('.right');
 
-let  pizza = document.querySelector('.pizza');
-pizza.style.display ="none";
+let text = document.querySelector('.text');
 
-left.addEventListener('click', function() {
+let leftRight = document.querySelector('.leftRight');
 
-    leftRight.style.display ="none";
-    left.style.display ="none";
-    right.style.display ="none";
-   
-    pizza.style.display ="block";
+let leftChoice = document.querySelector('.leftChoice');
+leftChoice.style.display = "none";
+
+let fight = document.querySelector('.fight')
+fight.style.display = "none";
+
+left.addEventListener('click', function(){
+console.log("you chose left");
+left.style.display = "none";
+right.style.display = "none";
+leftRight.style.display = "none";
+leftChoice.style.display = "block"
+text.innerHTML = "choose to click or search";
+});
+
+leftChoice.addEventListener('dblclick', function(){
+console.log("you kept left");
+leftChoice.style.display = "none";
+text.style.display = "none";
 
 });
