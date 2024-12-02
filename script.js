@@ -24,5 +24,5 @@ leftChoice.addEventListener('dblclick', function(){
 console.log("you kept left");
 leftChoice.style.display = "none";
 text.style.display = "none";
-
+fight.style.display = "block";
 });
