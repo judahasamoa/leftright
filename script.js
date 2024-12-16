@@ -131,6 +131,38 @@ befriend.style.display = "none";
 let bta = document.querySelector('.bta');
 bta.style.display = "none";
 
+let friend = document.querySelector('.friend');
+friend.style.display = "none";
+
+let friendt = document.querySelector('.friendt');
+friendt.style.display = "none";
+
+let bleedfight = document.querySelector('.bleedfight');
+bleedfight.style.display = "none";
+
+befriend.addEventListener("click", function(){
+console.log("you made a new friend")
+befriend.style.display = "none"
+bta.style.display = "none"
+wakeup.style.display = "none"
+wakeupt.style.display = "none"
+sleepwatch.style.display = "none"
+friend.style.display = "block"
+friendt.style.display = "block"
+});
+
+bta.addEventListener("click", function(){
+console.log("you fought the stranger")
+bta.style.display = "none";
+befriend.style.display = "none";
+wakeup.style.display = "none";
+wakeupt.style.display = "none";
+bta.style.display = "none";
+sleepwatch.style.display = "none";
+bleed.style.display = "block";
+bta.style.display = "none";
+bleedfight.style.display = "block";
+});
 food.addEventListener("mouseenter", function() {
 console.log("you scavanged for food")
 help.style.display = "none"
